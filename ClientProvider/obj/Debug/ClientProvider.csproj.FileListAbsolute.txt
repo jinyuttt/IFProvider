@@ -1,0 +1,7 @@
+E:\study\Test\ClientProvider\ClientProvider\bin\Debug\ClientProvider.exe.config
+E:\study\Test\ClientProvider\ClientProvider\bin\Debug\ClientProvider.exe
+E:\study\Test\ClientProvider\ClientProvider\bin\Debug\ClientProvider.pdb
+E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.csprojAssemblyReference.cache
+E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.csproj.CoreCompileInputs.cache
+E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.exe
+E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.pdb

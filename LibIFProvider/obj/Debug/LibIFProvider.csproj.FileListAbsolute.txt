@@ -1,0 +1,2 @@
+E:\study\Test\ClientProvider\LibIFProvider\obj\Debug\LibIFProvider.csprojAssemblyReference.cache
+E:\study\Test\ClientProvider\LibIFProvider\obj\Debug\LibIFProvider.csproj.CoreCompileInputs.cache

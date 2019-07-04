@@ -1,0 +1,4 @@
+E:\study\Test\ClientProvider\IFProviderCore\obj\Debug\netcoreapp3.0\IFProviderCore.csprojAssemblyReference.cache
+E:\study\Test\ClientProvider\IFProviderCore\obj\Debug\netcoreapp3.0\IFProviderCore.csproj.CoreCompileInputs.cache
+E:\study\Test\ClientProvider\IFProviderCore\obj\Debug\netcoreapp3.0\IFProviderCore.AssemblyInfoInputs.cache
+E:\study\Test\ClientProvider\IFProviderCore\obj\Debug\netcoreapp3.0\IFProviderCore.AssemblyInfo.cs

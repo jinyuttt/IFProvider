@@ -1,0 +1,8 @@
+E:\study\Test\ClientProvider\NetRequestProxy\bin\Debug\netstandard2.0\RequestProxy.deps.json
+E:\study\Test\ClientProvider\NetRequestProxy\bin\Debug\netstandard2.0\RequestProxy.dll
+E:\study\Test\ClientProvider\NetRequestProxy\bin\Debug\netstandard2.0\RequestProxy.pdb
+E:\study\Test\ClientProvider\NetRequestProxy\obj\Debug\netstandard2.0\RequestProxy.csproj.CoreCompileInputs.cache
+E:\study\Test\ClientProvider\NetRequestProxy\obj\Debug\netstandard2.0\RequestProxy.AssemblyInfoInputs.cache
+E:\study\Test\ClientProvider\NetRequestProxy\obj\Debug\netstandard2.0\RequestProxy.AssemblyInfo.cs
+E:\study\Test\ClientProvider\NetRequestProxy\obj\Debug\netstandard2.0\RequestProxy.dll
+E:\study\Test\ClientProvider\NetRequestProxy\obj\Debug\netstandard2.0\RequestProxy.pdb
