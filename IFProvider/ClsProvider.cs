@@ -40,6 +40,7 @@ namespace LibInterfaceProvider
         const char ClsFlage = '`';
         static ConcurrentDictionary<string, Type> dicType = new ConcurrentDictionary<string, Type>();
         static ModuleBuilder moduleBuilder = null;
+        static AssemblyBuilder assemblyBuilder = null;
         public static T Create<T>() where T:class
         {
             Type curType = typeof(T);
@@ -74,8 +75,11 @@ namespace LibInterfaceProvider
             //
             TypeBuilder typeBuilder = null;
             AssemblyName assemblyName = new AssemblyName(Name);
-            AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndCollect);
-            ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
+            if(assemblyBuilder==null)
+             assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndCollect);
+
+            if(moduleBuilder==null)
+            moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
             //
             var lst = Filter<T>();
             #region 实现方法
@@ -99,7 +103,10 @@ namespace LibInterfaceProvider
                 typeBuilder = moduleBuilder.DefineType(curType.Name + "Cls", TypeAttributes.Public | TypeAttributes.Class,
      typeof(object), new Type[] { curType });
             }
-
+            //
+            CustomAttributeBuilder custom = new CustomAttributeBuilder(typeof(EmitDependencyInjection).GetConstructor(Type.EmptyTypes), new object[0]);
+            typeBuilder.SetCustomAttribute(custom);
+            //
             if (curType.IsGenericType)
             {
                 foreach (var method in curType.GetGenericTypeDefinition().GetMethods())

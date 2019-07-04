@@ -2,3 +2,11 @@ E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.cspr
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csproj.CoreCompileInputs.cache
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.AssemblyInfoInputs.cache
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.AssemblyInfo.cs
+E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.deps.json
+E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.dll
+E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.pdb
+E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\RequestProxy.dll
+E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\RequestProxy.pdb
+E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csproj.CopyComplete
+E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.dll
+E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.pdb

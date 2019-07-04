@@ -100,7 +100,10 @@ namespace LibInterfaceProvider
                 typeBuilder = moduleBuilder.DefineType(curType.Name + "Cls", TypeAttributes.Public | TypeAttributes.Class,
      typeof(object), new Type[] { curType });
             }
-
+            //
+            CustomAttributeBuilder custom = new CustomAttributeBuilder(typeof(EmitDependencyInjection).GetConstructor(Type.EmptyTypes), new object[0]);
+            typeBuilder.SetCustomAttribute(custom);
+            //
             if (curType.IsGenericType)
             {
                 foreach (var method in curType.GetGenericTypeDefinition().GetMethods())
