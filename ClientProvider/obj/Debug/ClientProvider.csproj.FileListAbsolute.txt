@@ -5,3 +5,15 @@ E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.csprojAssem
 E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.csproj.CoreCompileInputs.cache
 E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.exe
 E:\study\Test\ClientProvider\ClientProvider\obj\Debug\ClientProvider.pdb
+E:\study\IFProvider\ClientProvider\bin\Debug\ClientProvider.exe.config
+E:\study\IFProvider\ClientProvider\bin\Debug\ClientProvider.exe
+E:\study\IFProvider\ClientProvider\bin\Debug\ClientProvider.pdb
+E:\study\IFProvider\ClientProvider\bin\Debug\RequestProxy.dll
+E:\study\IFProvider\ClientProvider\bin\Debug\RequestProxy.pdb
+E:\study\IFProvider\ClientProvider\obj\Debug\ClientProvider.csprojAssemblyReference.cache
+E:\study\IFProvider\ClientProvider\obj\Debug\ClientProvider.csproj.CoreCompileInputs.cache
+E:\study\IFProvider\ClientProvider\obj\Debug\ClientProvider.csproj.CopyComplete
+E:\study\IFProvider\ClientProvider\obj\Debug\ClientProvider.exe
+E:\study\IFProvider\ClientProvider\obj\Debug\ClientProvider.pdb
+E:\study\IFProvider\ClientProvider\bin\Debug\IFProvider.dll
+E:\study\IFProvider\ClientProvider\bin\Debug\IFProvider.pdb

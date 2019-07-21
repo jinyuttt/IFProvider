@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientProvider", "ClientPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibIFProvider", "LibIFProvider\LibIFProvider.csproj", "{DF126F76-78F9-40AF-A1E3-06BE9328212C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFProvider", "IFProvider\IFProvider.csproj", "{E1A7E934-396B-431F-841E-C32A59614502}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFProvider", "IFProvider\IFProvider.csproj", "{E1A7E934-396B-431F-841E-C32A59614502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestProxy", "NetRequestProxy\RequestProxy.csproj", "{E055DA75-AEEB-4ADE-9155-5ADBC8557636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestProxy", "NetRequestProxy\RequestProxy.csproj", "{E055DA75-AEEB-4ADE-9155-5ADBC8557636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSample", "LibSample\LibSample.csproj", "{4C970D2F-17A5-4F56-A623-DF5523B6DCDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E055DA75-AEEB-4ADE-9155-5ADBC8557636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E055DA75-AEEB-4ADE-9155-5ADBC8557636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E055DA75-AEEB-4ADE-9155-5ADBC8557636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C970D2F-17A5-4F56-A623-DF5523B6DCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C970D2F-17A5-4F56-A623-DF5523B6DCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C970D2F-17A5-4F56-A623-DF5523B6DCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C970D2F-17A5-4F56-A623-DF5523B6DCDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

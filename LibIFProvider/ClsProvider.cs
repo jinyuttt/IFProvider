@@ -17,6 +17,7 @@
 
 
 
+using RequestProxy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,6 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Collections.Concurrent;
 using System.Threading;
-using RequestProxy;
 
 namespace LibInterfaceProvider
 {
@@ -36,11 +36,11 @@ namespace LibInterfaceProvider
 * ==============================================================================*/
     public  class ClsProvider
     {
-        const string Name = "ProxyBilCls";
+        const string Name = "ProxyBilCls";//程序集，module名称
         const char ClsFlage = '`';
         static ConcurrentDictionary<string, Type> dicType = new ConcurrentDictionary<string, Type>();
         static ModuleBuilder moduleBuilder = null;
-        static TypeBuilder typeBuilder = null;
+        static AssemblyBuilder assemblyBuilder = null;
         public static T Create<T>() where T:class
         {
             Type curType = typeof(T);
@@ -73,10 +73,13 @@ namespace LibInterfaceProvider
         {
             Type curType = typeof(T);
             //
-           
+            TypeBuilder typeBuilder = null;
             AssemblyName assemblyName = new AssemblyName(Name);
-            AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndCollect);
-            ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
+            if(assemblyBuilder==null)
+             assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndSave);
+
+            if(moduleBuilder==null)
+                 moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
             //
             var lst = Filter<T>();
             #region 实现方法
@@ -84,7 +87,7 @@ namespace LibInterfaceProvider
             {
                 //加入参数即可
                 var pName = curType.GetGenericTypeDefinition().GetGenericArguments().Select(X => X.Name).ToArray();
-                //重新定义类
+                //重新定义类,处理泛型接口
                 string clsName = curType.Name.Split(new char[] { ClsFlage })[0];
                 foreach (string f in pName)
                 {
@@ -147,8 +150,11 @@ namespace LibInterfaceProvider
 
             CompileProperty<T>(typeBuilder);
             CompileEvent<T>(typeBuilder);
-            dicType[curType.Name] = typeBuilder.CreateType();
 
+            typeBuilder.CreateType();
+            var ss = typeBuilder.CreateTypeInfo();
+            dicType[curType.Name] = ss.AsType();
+            assemblyBuilder.Save(Name + ".dll");
         }
 
         /// <summary>
@@ -186,6 +192,10 @@ namespace LibInterfaceProvider
             il.Emit(OpCodes.Ldloc_0);
             il.Emit(OpCodes.Ldstr, method.Name);
             il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("SrvName").GetSetMethod());
+            //
+            il.Emit(OpCodes.Ldloc_0);
+            il.Emit(OpCodes.Ldstr, typeBuilder.Name.Substring(0, typeBuilder.Name.Length - 3));
+            il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("ExecuteFun").GetSetMethod());
 
             for (short i = 0; i < param.Length; i++)
             {

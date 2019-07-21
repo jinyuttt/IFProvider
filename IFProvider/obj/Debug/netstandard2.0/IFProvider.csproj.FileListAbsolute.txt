@@ -10,3 +10,15 @@ E:\study\Test\ClientProvider\IFProvider\bin\Debug\netstandard2.0\RequestProxy.pd
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csproj.CopyComplete
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.dll
 E:\study\Test\ClientProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.pdb
+E:\study\IFProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.deps.json
+E:\study\IFProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.dll
+E:\study\IFProvider\IFProvider\bin\Debug\netstandard2.0\IFProvider.pdb
+E:\study\IFProvider\IFProvider\bin\Debug\netstandard2.0\RequestProxy.dll
+E:\study\IFProvider\IFProvider\bin\Debug\netstandard2.0\RequestProxy.pdb
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csprojAssemblyReference.cache
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csproj.CoreCompileInputs.cache
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.AssemblyInfoInputs.cache
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.AssemblyInfo.cs
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.csproj.CopyComplete
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.dll
+E:\study\IFProvider\IFProvider\obj\Debug\netstandard2.0\IFProvider.pdb

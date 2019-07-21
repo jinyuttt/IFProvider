@@ -29,10 +29,24 @@ namespace RequestProxy
 * ==============================================================================*/
     public  class RequestBody
     {
+        /// <summary>
+        /// 服务名称(默认是接口名称)
+        /// </summary>
         public string SrvName { get; set; }
 
+        /// <summary>
+        /// 服务所在程序集
+        /// </summary>
         public string SrvDLL { get; set; }
 
+        /// <summary>
+        /// 执行方法
+        /// </summary>
+        public string ExecuteFun { get; set; }
+
+        /// <summary>
+        /// 参数
+        /// </summary>
         public Dictionary<string,object> Param { get; set; }
 
         public RequestBody()

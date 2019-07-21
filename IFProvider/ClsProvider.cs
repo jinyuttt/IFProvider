@@ -36,7 +36,7 @@ namespace LibInterfaceProvider
 * ==============================================================================*/
     public  class ClsProvider
     {
-        const string Name = "ProxyBilCls";
+        const string Name = "ProxyBilCls";//程序集，module名称
         const char ClsFlage = '`';
         static ConcurrentDictionary<string, Type> dicType = new ConcurrentDictionary<string, Type>();
         static ModuleBuilder moduleBuilder = null;
@@ -79,7 +79,7 @@ namespace LibInterfaceProvider
              assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndCollect);
 
             if(moduleBuilder==null)
-            moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
+                 moduleBuilder = assemblyBuilder.DefineDynamicModule(Name);
             //
             var lst = Filter<T>();
             #region 实现方法
@@ -87,7 +87,7 @@ namespace LibInterfaceProvider
             {
                 //加入参数即可
                 var pName = curType.GetGenericTypeDefinition().GetGenericArguments().Select(X => X.Name).ToArray();
-                //重新定义类
+                //重新定义类,处理泛型接口
                 string clsName = curType.Name.Split(new char[] { ClsFlage })[0];
                 foreach (string f in pName)
                 {
@@ -192,6 +192,10 @@ namespace LibInterfaceProvider
             il.Emit(OpCodes.Ldloc_0);
             il.Emit(OpCodes.Ldstr, method.Name);
             il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("SrvName").GetSetMethod());
+            //
+            il.Emit(OpCodes.Ldloc_0);
+            il.Emit(OpCodes.Ldstr, typeBuilder.Name.Substring(0,typeBuilder.Name.Length-3));
+            il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("ExecuteFun").GetSetMethod());
 
             for (short i = 0; i < param.Length; i++)
             {
@@ -267,6 +271,10 @@ namespace LibInterfaceProvider
             il.Emit(OpCodes.Ldloc_0);
             il.Emit(OpCodes.Ldstr, method.Name);
             il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("SrvName").GetSetMethod());
+            //
+            il.Emit(OpCodes.Ldloc_0);
+            il.Emit(OpCodes.Ldstr, typeBuilder.Name.Substring(0, typeBuilder.Name.Length - 3));
+            il.Emit(OpCodes.Call, typeof(RequestBody).GetProperty("ExecuteFun").GetSetMethod());
             //req.SrvName=XXX;
             for (short i = 0; i < param.Length; i++)
             {

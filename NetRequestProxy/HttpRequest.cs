@@ -17,21 +17,18 @@
 
 
 
-using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace RequestProxy
 {
     /* ============================================================================== 
-* 功能描述：WebRequest web服务
+* 功能描述：HttpRequest web服务
 * 创 建 者：jinyu 
 * 创建日期：2019 
 * 更新时间 ：2019
 * ==============================================================================*/
-   public class WebRequest
+    public class HttpRequest
     {
         public async Task<string> PostAsync(string url,string  content)
         {
@@ -42,6 +39,7 @@ namespace RequestProxy
                 message.EnsureSuccessStatusCode();
                 return await message.Content.ReadAsStringAsync();
             }
+          
         }
 
         public async  Task<string> GetAsync(string url)

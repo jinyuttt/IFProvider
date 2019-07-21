@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LibInterfaceProvider;
 
 namespace ClientProvider
 {
@@ -10,6 +6,9 @@ namespace ClientProvider
     {
         static void Main(string[] args)
         {
+            var cls=  ClsProvider.Create<ICall>();
+
+            cls.Call();
         }
     }
 }

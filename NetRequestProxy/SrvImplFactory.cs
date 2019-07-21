@@ -52,7 +52,11 @@ namespace RequestProxy
         /// <returns></returns>
         public T Request<T>(RequestBody request)
         {
-            WebRequest client = new WebRequest();
+            if(request.Param.Count>0)
+            {
+
+            }
+            HttpRequest client = new HttpRequest();
             string url = dic["url"] + "/" + request.SrvName;
             var  result = client.PostAsync(url, "");
             return default(T);
@@ -64,7 +68,7 @@ namespace RequestProxy
         /// <param name="request"></param>
         public void Push(RequestBody request)
         {
-            WebRequest client = new WebRequest();
+            HttpRequest client = new HttpRequest();
             string url = dic["url"] + "/" + request.SrvName;
             var result = client.GetAsync(url);
            

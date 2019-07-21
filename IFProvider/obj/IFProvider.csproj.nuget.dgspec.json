@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\study\\Test\\ClientProvider\\IFProvider\\IFProvider.csproj": {}
+    "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj": {}
   },
   "projects": {
-    "E:\\study\\Test\\ClientProvider\\IFProvider\\IFProvider.csproj": {
+    "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\Test\\ClientProvider\\IFProvider\\IFProvider.csproj",
+        "projectUniqueName": "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj",
         "projectName": "IFProvider",
-        "projectPath": "E:\\study\\Test\\ClientProvider\\IFProvider\\IFProvider.csproj",
+        "projectPath": "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\Test\\ClientProvider\\IFProvider\\obj\\",
+        "outputPath": "E:\\study\\IFProvider\\IFProvider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,14 +25,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\RequestProxy.csproj": {
-                "projectPath": "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\RequestProxy.csproj"
+              "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
+                "projectPath": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj"
               }
             }
           }
@@ -71,21 +69,20 @@
         }
       }
     },
-    "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\RequestProxy.csproj": {
+    "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\RequestProxy.csproj",
+        "projectUniqueName": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
         "projectName": "RequestProxy",
-        "projectPath": "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\RequestProxy.csproj",
+        "projectPath": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\Test\\ClientProvider\\NetRequestProxy\\obj\\",
+        "outputPath": "E:\\study\\IFProvider\\NetRequestProxy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +90,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "d:\\Program Files\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
