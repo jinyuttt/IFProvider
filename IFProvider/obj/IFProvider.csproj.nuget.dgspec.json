@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj": {}
+    "E:\\Study\\IFProvider\\IFProvider\\IFProvider.csproj": {}
   },
   "projects": {
-    "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj": {
+    "E:\\Study\\IFProvider\\IFProvider\\IFProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj",
+        "projectUniqueName": "E:\\Study\\IFProvider\\IFProvider\\IFProvider.csproj",
         "projectName": "IFProvider",
-        "projectPath": "E:\\study\\IFProvider\\IFProvider\\IFProvider.csproj",
+        "projectPath": "E:\\Study\\IFProvider\\IFProvider\\IFProvider.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\IFProvider\\IFProvider\\obj\\",
+        "outputPath": "E:\\Study\\IFProvider\\IFProvider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,13 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "d:\\Program Files\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
-                "projectPath": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj"
+              "E:\\Study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
+                "projectPath": "E:\\Study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj"
               }
             }
           }
@@ -57,32 +59,28 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
           "warn": true
         }
       }
     },
-    "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
+    "E:\\Study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
+        "projectUniqueName": "E:\\Study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
         "projectName": "RequestProxy",
-        "projectPath": "E:\\study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
+        "projectPath": "E:\\Study\\IFProvider\\NetRequestProxy\\RequestProxy.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-        "outputPath": "E:\\study\\IFProvider\\NetRequestProxy\\obj\\",
+        "outputPath": "E:\\Study\\IFProvider\\NetRequestProxy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,6 +88,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "d:\\Program Files\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -111,15 +110,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
           "warn": true

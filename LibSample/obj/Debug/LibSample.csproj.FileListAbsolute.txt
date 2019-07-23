@@ -1,6 +1,5 @@
-E:\study\IFProvider\LibSample\bin\Debug\LibSample.dll
-E:\study\IFProvider\LibSample\bin\Debug\LibSample.pdb
-E:\study\IFProvider\LibSample\obj\Debug\LibSample.csprojAssemblyReference.cache
-E:\study\IFProvider\LibSample\obj\Debug\LibSample.csproj.CoreCompileInputs.cache
-E:\study\IFProvider\LibSample\obj\Debug\LibSample.dll
-E:\study\IFProvider\LibSample\obj\Debug\LibSample.pdb
+E:\Study\IFProvider\LibSample\bin\Debug\LibSample.dll
+E:\Study\IFProvider\LibSample\bin\Debug\LibSample.pdb
+E:\Study\IFProvider\LibSample\obj\Debug\LibSample.csproj.CoreCompileInputs.cache
+E:\Study\IFProvider\LibSample\obj\Debug\LibSample.dll
+E:\Study\IFProvider\LibSample\obj\Debug\LibSample.pdb

@@ -51,5 +51,45 @@ namespace RequestProxy
                 return await message.Content.ReadAsStringAsync();
             }
         }
+
+        public async Task<string> PutAsync(string url,string content)
+        {
+            HttpClient client = new HttpClient();
+            StringContent theContent = new StringContent(content, System.Text.Encoding.UTF8, "application/json");
+            using (HttpResponseMessage message = await client.PutAsync(url,theContent))
+            {
+                message.EnsureSuccessStatusCode();
+               return await message.Content.ReadAsStringAsync();
+            }
+        }
+        public async Task<string> DeleteAsync(string url)
+        {
+            HttpClient client = new HttpClient();
+           
+            using (HttpResponseMessage message = await client.DeleteAsync(url))
+            {
+                message.EnsureSuccessStatusCode();
+               return await message.Content.ReadAsStringAsync();
+            }
+        }
+
+        public async Task<string> SendAsync(string url,string content)
+        {
+            HttpClient client = new HttpClient();
+
+            using (HttpResponseMessage message = await client.SendAsync(
+             new HttpRequestMessage()
+             {
+                 RequestUri = new System.Uri(url),
+                 Content = new StringContent(content)
+             }
+             ))
+            {
+                message.EnsureSuccessStatusCode();
+              return  await message.Content.ReadAsStringAsync();
+            }
+           
+           
+        }
     }
 }
